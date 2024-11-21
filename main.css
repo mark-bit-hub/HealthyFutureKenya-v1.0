@@ -1,0 +1,172 @@
+/* General Styles */
+
+body {
+  font-family: sans-serif; /* Set a default font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+h1, h2, h3, h4 {
+  margin: 1rem 0; /* Set some margin for headings */
+}
+
+p {
+  margin-bottom: 1rem; /* Add some margin for paragraphs */
+}
+
+img {
+  max-width: 100%; /* Images scale to fit container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+a {
+  color: #007bff; /* Set default link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  color: #ff1e00; /* Change link color on hover */
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333; /* Set header background color */
+  color: #fff; /* Set header text color */
+  padding: 1rem 2rem; /* Add padding to header */
+}
+
+nav {
+  display: flex; /* Make navigation bar horizontal */
+  justify-content: space-between; /* Space navigation items evenly */
+  align-items: center; /* Align navigation items vertically */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points from list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+nav li {
+  display: inline-block;  /* Display navigation items inline */
+  margin-right: 1rem; /* Add margin between items */
+}
+
+/* Main Content Styles */
+
+main {
+  padding: 2rem; /* Add padding to main content area */
+}
+
+section {
+  margin-bottom: 2rem; /* Add margin between sections */
+  background-color: #333; /* Set section background color */
+  padding: 1rem; /* Add padding to sections */
+}
+
+.container { /* Optional wrapper for flexible content within sections */
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on small screens */
+  justify-content: space-between; /* Space content evenly */
+  align-items: flex-start; /* Align content at the top */
+}
+
+.content { /* Optional class for text content within sections */
+  flex: 1 1 auto; /* Allow content to grow and shrink proportionally */
+  margin-bottom: 1rem; /* Maintain some margin between content blocks */
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333; /* Set footer background color */
+  color: #fff; /* Set footer text color */
+  padding: 1rem 2rem; /* Add padding to footer */
+  text-align: center; /* Center footer content */
+}
+/* Add font families */
+body {
+  font-family: 'Arial', sans-serif; /* Default font */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif; /* Heading font */
+}
+
+section {
+  /* ... other section styles ... */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+section:hover {
+  transform: scale(1.05); /* Slightly scale the section on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+/* Font Families */
+@font-face {
+  font-family: 'MyFont1';
+  src: url('font1.ttf'); /* Replace with your font file path */
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('font2.ttf'); /* Replace with your font file path */
+}
+
+@font-face {
+  font-family: 'MyFont3';
+  src: url('font3.ttf'); /* Replace with your font file path */
+}
+
+/* Section Styles */
+#Emerging-trends {
+  font-family: 'MyFont1';
+}
+
+#mental-health {
+  font-family: 'MyFont2';
+}
+
+#reproductive-health {
+  font-family: 'MyFont3';
+}
+
+/* List Style Modification */
+ul {
+  list-style-type: none; /* Remove default list style */
+}
+
+ul li:before {
+  content: '◆ '; /* Add diamond symbol before list items */
+  margin-right: 5px; /* Add margin between diamond and text */
+}
+section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Text color to contrast with the background */
+  text-align: center; /* Center text horizontally */
+  padding: 50px; /* Add padding to the section */
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  section {
+    padding: 10px; /* Reduce padding for smaller screens */
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  section img {
+    width: 100%; /* Make the image full-width on smaller screens */
+    margin-bottom: 10px; /* Add margin below the image */
+  }
+}
